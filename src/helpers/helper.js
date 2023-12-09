@@ -1,8 +1,5 @@
-import { response } from "express";
 import pool from "../config/config.js";
 import { queries } from "../queries/queries.js";
-
-
 
 export const getAllStudentsHelper = () => {
     return new Promise((resolve, reject) => {

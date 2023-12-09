@@ -1,10 +1,4 @@
-import { response } from "express"
 import { addStudentHelper, getAllStudentsById, getAllStudentsHelper, removeHelper, updateHelper } from "../helpers/helper.js"
-
-
-
-
-
 
 export const getStudents = (req, res) => {
     getAllStudentsHelper().then((response) => {
@@ -48,7 +42,6 @@ export const removeStudent = (req, res) => {
         res.status(500).send(err)
     })
 }
-
 
 
 export const updateStudent = (req, res) => {

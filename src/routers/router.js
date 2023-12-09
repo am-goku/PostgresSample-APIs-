@@ -3,20 +3,15 @@ import { addStudent, getStudents, removeStudent, studentsById, updateStudent } f
 
 const router = Router()
 
-
-
-
 router.get('/', getStudents)
 
 router.get('/:id', studentsById)
-
 
 router.post('/add', addStudent);
 
 router.delete('/delete/:id', removeStudent);
 
 router.put('/update/:id', updateStudent)
-
 
 
 export default router
